@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "author": "Preetha Warrier",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 377.56, "left": -283.6, "attrs": {} },
+    { "type": "wokwi-ir-remote", "id": "remote1", "top": 93.76, "left": -717.64, "attrs": {} },
+    { "type": "wokwi-tv", "id": "tv1", "top": -256.63, "left": -494.68, "attrs": {} },
+    { "type": "wokwi-ir-receiver", "id": "ir1", "top": 498.63, "left": -523.31, "attrs": {} }
+  ],
+  "connections": [
+    [ "tv1:SYNC", "uno:9", "yellow", [ "v45.84", "h-5.12" ] ],
+    [ "tv1:GND", "uno:GND.1", "blue", [ "v51.49", "h-62.22" ] ],
+    [ "ir1:GND", "uno:GND.2", "black", [ "v70.92", "h385.77" ] ],
+    [ "ir1:VCC", "uno:5V", "red", [ "v51.86", "h1.37" ] ],
+    [ "ir1:DAT", "uno:6", "magenta", [ "v26.93", "h455.09", "v2.26" ] ],
+    [ "tv1:IN", "uno:7", "green", [ "v35.5", "h33.9" ] ]
+  ]
+}
